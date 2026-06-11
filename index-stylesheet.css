@@ -1,0 +1,47 @@
+h1{
+    color:rgb(54, 77, 54);
+}
+
+h2{
+    color:rgb(0, 135, 68);
+    background-color: rgb(199, 226, 152);
+    margin-top: 75px;
+}
+
+
+p{
+    padding-left: 5px;
+    margin-top: -20px;
+    background-color: rgb(175, 212, 163);
+    margin-bottom: 20px;
+}
+
+h3{
+    padding-left: 5px;
+    background-color:rgb(199, 226, 152)
+}
+
+p.lin{
+    background-color: rgb(134, 186, 117);
+}
+
+
+.GB{
+   background-color: rgb(158, 187, 114); 
+}
+
+
+/*div#base{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1200px;
+    grid-gap: 10px;
+
+    background-color: white;
+}
+
+div#base>div {
+    padding: 10px;
+    
+}
+*/
