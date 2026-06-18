@@ -1,11 +1,13 @@
 h1{
     color:rgb(54, 77, 54);
+    font-family: fantasy;
 }
 
 h2{
     color:rgb(0, 135, 68);
     background-color: rgb(199, 226, 152);
     margin-top: 75px;
+    font-family: cursive;
 }
 
 
@@ -14,14 +16,17 @@ p{
     margin-top: -20px;
     background-color: rgb(175, 212, 163);
     margin-bottom: 20px;
+    font-family: serif;
 }
 
 h3{
     padding-left: 5px;
-    background-color:rgb(199, 226, 152)
+    background-color:rgb(199, 226, 152);
+    font-family: 'Times New Roman', Times, serif;    
 }
 
 p.lin{
+    font-style: italic;
     background-color: rgb(134, 186, 117);
 }
 
