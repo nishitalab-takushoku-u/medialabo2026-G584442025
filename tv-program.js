@@ -21,6 +21,18 @@ function print(data) {
  } 
 }
 
+
+// 第4回の宿題分
+let pd= document.querySelector()
+
+
+
+
+
+
+
+
+
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
 
