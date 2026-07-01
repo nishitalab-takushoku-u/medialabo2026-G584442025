@@ -23,12 +23,32 @@ function print(data) {
 
 
 // 第4回の宿題分
-let pd= document.querySelector()
+let SerCha= document.querySelector('button#Bt')
+SerCha.addEventListener('click', SerchResultCha);
+
+function SerchResultCha() {
+  let SelCha = document.querySelector('select#channel');
+  let No = SelCha.selectedIndex;
+
+  let OpSerCha = SelCha.querySelectorAll('option');
+  let rescha = OpSerCha.item(No);
 
 
+  console.log('チャンネル：'+ rescha.getAttribute('value'));
+}
 
+let SerGen= document.querySelector('button#Bt')
+SerGen.addEventListener('click', SerchResultGen);
 
+function SerchResultGen() {
+  let SelGen = document.querySelector('select#genre');
+  let No = SelGen.selectedIndex;
 
+  let OpSerGen = SelGen.querySelectorAll('option');
+  let resGen = OpSerGen.item(No);
+
+  console.log('チャンネル：'+ resGen.getAttribute('value'));
+}
 
 
 
