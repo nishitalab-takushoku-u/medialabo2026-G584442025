@@ -52,9 +52,66 @@ function SerchResultGen() {
 
 
 
-
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
+ let u1 = document.querySelector('table');
+ 
+ let div = document.createElement('div#result');
+ let tbo = document.createElement('tbody');
+
+ 
+ div.insertAdjacentElement('beforeend',u1);
+
+ u1.insertAdjacentElement('beforeend',tbo);
+
+
+ let no = 0;
+ for (x of data.list.g1){
+ let tr = document.createElement('tr');
+ tbo.insertAdjacentElement('beforeend',tr);
+
+  let th = document.createElement('th');
+  no++;
+  th.textContent =  no + "件目"
+  tr.insertAdjacentElement('beforeend',th);
+
+  let tdStr = document.createElement('td');
+  tdStr.textContent = x.start_time;
+  th.insertAdjacentElement('afterend',tdStr);
+
+  let tdFin = document.createElement('td');
+  tdFin.textContent = x.end_time;
+  tdStr.insertAdjacentElement('afterend',tdFin);
+
+  let tdCha = document.createElement('td');
+  tdCha.textContent = x.service.name;
+  tdFin.insertAdjacentElement('afterend',tdCha);
+
+  let tdTit = document.createElement('td');
+  tdTit.textContent = x.title;
+  tdCha.insertAdjacentElement('afterend',tdTit);
+
+  let tdSub = document.createElement('td');
+  tdSub.textContent = x.subtitle;
+  tdTit.insertAdjacentElement('afterend',tdSub);
+
+  let tdCon = document.createElement('td');
+  tdCon.textContent = x.content;
+  tdSub.insertAdjacentElement('afterend',tdCon);
+
+  let tdAct = document.createElement('td');
+  if(x.act===""){
+   tdAct.textContent = "記載無し";    
+  }
+  else{
+    tdAct.textContent = x.act;
+  }
+  tdCon.insertAdjacentElement('afterend',tdAct);
+  let u2 = document.querySelector('caption')
+  u2.textContent = "計"+ no +"件"
+ }
+
+
 
 }
 
