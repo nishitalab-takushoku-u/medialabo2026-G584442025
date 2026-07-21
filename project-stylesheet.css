@@ -1,5 +1,7 @@
-div#result{
+.result{
  display: flex;
  justify-content: center;
  text-align: center;
+ color: yellow;
+ margin: 25px;
 }

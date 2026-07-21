@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Project</title>
   <link rem="stylesheet" href="project-stylesheet.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
   <script src="tv-program.js" defer></script>
  </head>
 
@@ -13,46 +14,35 @@
   <h1>NHKの番組表 の検索結果</h1>
   
   
-  <select name="channel" id="channel">
-    <option value="">検索したいチャンネルを選んでください</option>
-    <option value="NHK">NHK総合</option>
-    <option value="E1">Eテレ</option>
-    <option value="c">ー</option>
+  <select name="survice" id="survice">
+    <option value="0">検索したいチャンネルを選んでください</option>
+    <option value="g1">NHK総合</option>
+    <option value="e1">Eテレ</option>
   </select>
 
   <br />
 
   <select name="genre" id="genre">
-    <option value="">検索したいジャンルを選んでください</option>
+    <option value="9999">検索したいジャンルを選んでください</option>
+    <option value="0000">ニュース・報道</option>
+    <option value="0100">スポーツ</option>
     <option value="0205">情報・ワイドショー</option>
-    <option value="Ani">アニメ</option>
-    <option value="Spo">スポーツ</option>
-    <option value="Bar">バラエティ</option>
+    <option value="0300">ドラマ</option>
+    <option value="0409">音楽</option>
+    <option value="0502">バラエティ</option>
+    <option value="0600">映画</option>
+    <option value="0700">アニメ</option>
+    <option value="0800">ドキュメンタリー・教養</option>
+    <option value="0903">劇場・公演</option>
+    <option value="1000">趣味・教育</option>
+    <option value="1100">福祉</option>
   </select>
-
+  
 
   <button id ="Bt">検索</button>
 
 
-  <table>
-   
-   <caption></caption>   
-   
-   <thead id="headder"> 
-    <tr> 
-     <th scope="col">件数</th>   
-     <th scope="col">開始時刻</th>
-     <th scope="col">終了時刻</th>
-     <th scope="col">チャンネル</th>
-     <th scope="col">タイトル</th>
-     <th scope="col">サブタイトル</th>
-     <th scope="col">番組説明</th>
-     <th scope="col">出演者</th>
-    </tr>  
-   </thead>
- 
-   
-  </table>
+  
  
  </body>
 </html>
